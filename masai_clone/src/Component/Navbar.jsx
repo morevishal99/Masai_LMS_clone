@@ -1,7 +1,9 @@
 import React from 'react'
-import { Box, 
-  Flex, 
-   Text } from '@chakra-ui/react'
+import {
+  Box,
+  Flex,
+  Text
+} from '@chakra-ui/react'
 import {
   Popover,
   PopoverTrigger,
@@ -17,21 +19,23 @@ const Navbar = () => {
     <>
       <Box height="100px"  >
         <Flex fontSize={"20px"} lineHeight={"21.25px"} fontWeight={"500"} fontFamily={" Inter, ui-sans-serif"} padding={"30px"} color={"grey"} /* "rgb(55, 65, 81)"*/ justifyContent={"space-around"}>
-       <Box> 
 
-        <Text color={"black"} fontWeight={700} fontSize={"37px"}> masa<span style={{ color:'red'}} >i</span></Text>
-       </Box>
-          <Text><Link to="/lecture">Lecture </Link> </Text>
-          <Text> <Link to="/assignment">Assignments </Link> </Text>
-          <Text> <Link to="/quizes">Quizes </Link> </Text>
-          <Text><Link to="/discussion">Discussion </Link> </Text>
-          <Text><Link to="/notification">Notification </Link> </Text>
-          <Text><Link to="/message">Message </Link> </Text>
-          <Text><Link to="/elective">Elective </Link> </Text>
-          <Text><Link to="/courses">Courses </Link> </Text>
-          <Text><Link to="/tickets">Tickets </Link> </Text>
-          <Text><Link to="/announcements">Announcements </Link> </Text>
-          
+          <Box>
+            <Text color={"black"} fontWeight={700} fontSize={"37px"}> masa<span style={{ color: 'red' }} >i</span></Text>
+          </Box>
+
+          <Link to="/lecture">Lecture </Link>
+          <Link to="/assignment">Assignments </Link>
+          <Link to="/quizes">Quizes </Link>
+          <Link to="/discussion">Discussion </Link>
+          <Link to="/notification">Notification </Link>
+          <Link to="/message">Message </Link>
+          <Link to="/elective">Elective </Link>
+          <Link to="/courses">Courses </Link>
+          <Link to="/tickets">Tickets </Link>
+          <Link to="/announcements">Announcements </Link>
+
+          {/* Box containg user details */}
           <Box>
             <Popover>
               <PopoverTrigger>
@@ -48,6 +52,7 @@ const Navbar = () => {
               </PopoverContent>
             </Popover>
           </Box>
+
         </Flex>
       </Box>
       <hr />
