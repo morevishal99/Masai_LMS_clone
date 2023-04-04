@@ -1,9 +1,6 @@
 import React from 'react'
 import { Box, 
-  // Button, 
   Flex, 
-  // Image, 
-  // Stack,
    Text } from '@chakra-ui/react'
 import {
   Popover,
@@ -11,10 +8,8 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  // PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  // PopoverAnchor,
 } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 const Navbar = () => {
@@ -36,6 +31,7 @@ const Navbar = () => {
           <Text><Link to="/courses">Courses </Link> </Text>
           <Text><Link to="/tickets">Tickets </Link> </Text>
           <Text><Link to="/announcements">Announcements </Link> </Text>
+          
           <Box>
             <Popover>
               <PopoverTrigger>
